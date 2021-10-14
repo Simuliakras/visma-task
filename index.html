@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Pizzeria menu</title>
+  </head>
+  <body>
+    <header>
+      <h1>Pizzeria menu application</h1>
+    </header>
+    <div class="form-container">
+      <form id="pizza-form">
+        <h3>Add a new pizza</h3>
+        <label for="name">Pizza name:</label>
+        <input type="text" id="name-input" name="name"/>
+        <label for="price">Pizza price:</label>
+        <input type="number" id="price-input" name="price" min="0"/>
+        <label for="heat">Pizza heat:</label>
+        <input
+          type="range"
+          id="heat-input"
+          name="heat"
+          min="1"
+          max="3"
+          value="1"
+        />
+        <label for="toppings">Pizza toppings:</label>
+        <input type="text" id="toppings-input" name="toppings" />
+        <ul id="toppings-list"></ul>
+        <button id="toppings-button">Add topping</button>
+        <label for="photo">Photo:</label>
+        <select name="photo" id="photo-input">
+          <option value="images/no-image.jpg">None</option>
+          <option value="images/margherita.jpg">Margherita</option>
+          <option value="images/capricciosa.jpg">Capricciosa</option>
+          <option value="images/quattro-formaggi.jpg">Quattro Formaggi</option>
+          <option value="images/napoletana.jpg">Napoletana</option>
+          <option value="images/marinara.jpg">Marinara</option>
+        </select>
+        <button id="submit-button" type="submit">Add to menu</button>
+      </form>
+    </div>
+    <div class="sort-menu">
+        <span>Sort by:</span>
+        <select name="sort" id="sort-input">
+          <option value="name" selected>Name</option>
+          <option value="heat">Heat</option>
+          <option value="price">Price</option>
+        </select>
+
+        <button id="sort-button">Sort</button>
+      </div>
+    <div class="menu-container">
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Spartan&display=swap');
+
+body{
+    font-family: 'Spartan', sans-serif;
+    background-image: url("./images/background.jpg");
+}
+
+header h1{
+    padding: 30px 0;
+    color: #fff;
+    text-align: center;
+    font-size: 2.2rem;
+    letter-spacing: 0.1em;
+}
+
+.form-container{
+    display: flex;
+    justify-content: center;
+}
+
+#pizza-form{
+    background-color: #fff;
+    width: 400px;
+    padding: 10px 20px 30px 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+#pizza-form h3{
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+#pizza-form label{
+    font-weight: bold;
+    font-style:normal;
+    margin: 10px 0;
+    font-size: 0.9rem;
+}
+
+#pizza-form input{
+    line-height: 1.6em;
+    background-color: #fff;
+}
+
+#pizza-form button{
+    margin-top: 3px;
+    padding: 5px 0;
+    line-height: 1.6em;
+    font-family: 'Spartan', sans-serif;
+}
+
+#pizza-form ul:empty{
+    display: none;
+}
+
+#pizza-form select{
+    height: 2em;
+}
+
+.sort-menu{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sort-menu span{
+    color: #fff;
+    padding-right: 5px;
+}
+
+.sort-menu #sort-input, #sort-button{
+    padding: 5px 20px;
+}
+
+.menu-container{
+    margin-top: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.card{
+    width: 350px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    background-color: #d3d3d3;
+    border-radius: 5px;
+}
+
+.card .card-image{
+    height: 200px;
+    object-fit: cover;
+}
+
+.card .card-body{
+    height: 250px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.card .card-body .card-toppings{
+    white-space: normal;
+}
+
+.card .card-body .card-name{
+    display: flex;
+    align-items: center;
+}
+
+.card .card-body .card-name img{
+    height: 35px;
+    width: 35px;
+}
+
+.card .delete-button{
+    margin-top: 20px;
+}
